@@ -1,0 +1,149 @@
+#root {
+  font-size: 1.2vw;
+  width: 100vw;
+}
+
+
+/* ELEMENTS */
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: normal;
+  display: inline-block;
+  z-index: -5;
+}
+
+em {
+  font-weight: 100;
+}
+
+/* IDs */
+
+#video-small {
+  border-radius: 5rem;
+  height: 1em;
+  object-fit: none;
+}
+
+#video-big {
+  width: 100vw;
+  grid-column: 1/2;
+  grid-row: 1;
+  z-index: 10;
+}
+
+/* CLASSES */
+
+.mouse-area {
+  cursor: default;
+}
+.mouse {
+  background-color: black;
+  position: fixed;
+  height: 15px;
+  width: 15px;
+  border-radius: 10rem;
+
+  z-index: 500;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 10vw 1fr 10vw;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+
+}
+
+/* .simple-logo-container,
+.mask-logo-container {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0.5vw;
+  border-radius: 5rem;
+}
+.mask-logo-container {
+  background-color: black;
+  color: white;
+  mask-image: url(../public/vite.svg);
+  mask-repeat: no-repeat;
+} */
+
+.logo {
+
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: 0;
+}
+
+.menu-container {
+  font-size: 1.3vw;
+  grid-column: 3;
+  overflow: hidden;
+}
+
+.motto {
+  display: flex;
+  max-width: 100vw;
+  line-height: 1.11;
+  font-size: 3.5vw;
+  padding: 0 10vw 5vw 10vw;
+  white-space: nowrap;
+}
+
+.motto--second-line,
+.motto--second-line div {
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+
+.motto--third-line,
+.motto--first-line {
+  overflow: hidden;
+}
+
+.motto span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-big-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.video-big-mask-cover {
+  background-color: white;
+  grid-column: 1/2;
+  grid-row: 1;
+  z-index: 11; 
+}
+
+
+@media (width <= 768px) {
+  .logo {
+    font-weight: 500;
+    font-size: 5.5em;
+    margin-left: 0;
+  }
+  .motto {
+    display: flex;
+    max-width: 100vw;
+    line-height: 1.11;
+    font-size: 5.8vw;
+    padding: 30vw 10vw 5vw 3vw;
+    white-space: nowrap;
+  }
+  .menu-container {
+    display: none;
+  }
+}
